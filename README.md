@@ -1,0 +1,1 @@
+# node-red-contrib-sonoff-lan-mode
