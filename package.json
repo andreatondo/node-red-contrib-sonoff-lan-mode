@@ -1,5 +1,5 @@
 {
-  "name": "red-contrib-sonoff-lan-mode",
+  "name": "node-red-contrib-sonoff-lan-mode",
   "version": "1.0.0",
   "dependencies": {
     "ws": "^7.2.3"
