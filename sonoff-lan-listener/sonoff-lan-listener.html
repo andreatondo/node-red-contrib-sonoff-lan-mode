@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('sonoff-lan-listener', {
+        category: 'sonoff',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value: ""},
+            sonoffConfig: {value: "", type: "sonoff-lan-config"},
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "file.png",
+        label: function () {
+            return this.name || "sonoff-lan-listener";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="sonoff-lan-listener">
+    <div class="form-row">
+        <label for="node-input-sonoffConfig"><i class="icon-tag"></i> Sonoff</label>
+        <input type="text" id="node-input-sonoffConfig">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="sonoff-lan-listener">
+    <p>A node that subscribes to events from Sonoff</p>
+</script>

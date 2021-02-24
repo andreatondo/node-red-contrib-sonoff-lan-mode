@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('sonoff-lan-control', {
+        category: 'sonoff',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value: ""},
+            sonoffConfig: {value: "", type: "sonoff-lan-config"},
+        },
+        inputs: 1,
+        outputs: 0,
+        icon: "file.png",
+        label: function () {
+            return this.name || "sonoff-lan-control";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="sonoff-lan-control">
+    <div class="form-row">
+        <label for="node-input-sonoffConfig"><i class="icon-tag"></i> Sonoff</label>
+        <input type="text" id="node-input-sonoffConfig">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="sonoff-lan-control">
+    <p>A node that controls the Sonoff switch</p>
+</script>

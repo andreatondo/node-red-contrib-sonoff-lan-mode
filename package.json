@@ -1,0 +1,33 @@
+{
+  "name": "red-contrib-sonoff-lan-mode",
+  "version": "1.0.0",
+  "dependencies": {
+    "ws": "^7.2.3"
+  },
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreatondo/node-red-contrib-sonoff-lan-mode.git"
+  },
+  "keywords": [
+    "node-red",
+    "sonoff",
+    "sonoff-lan-mode"
+  ],
+  "author": "Andrea Tondo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreatondo/node-red-contrib-sonoff-lan-mode/issues"
+  },
+  "homepage": "https://github.com/andreatondo/node-red-contrib-sonoff-lan-mode",
+  "node-red": {
+    "nodes": {
+      "sonoff-lan-config": "sonoff-lan-config/sonoff-lan-config.js",
+      "sonoff-lan-listener": "sonoff-lan-listener/sonoff-lan-listener.js",
+      "sonoff-lan-control": "sonoff-lan-control/sonoff-lan-control.js"
+    }
+  }
+}
