@@ -25,6 +25,8 @@ A node that subscribes to events from Sonoff
 
 A node that controls the Sonoff switch
 
+Accepts an input `msg.payload` with content "on" to turn on the Sonoff switch, and "off" to turn it off.
+
 ## Supported devices
 
 The library has only been tested on Sonoff Basic switch. 
